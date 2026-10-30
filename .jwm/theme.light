@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<JWM> <!-- adapted from ClearLooks by David Andrews -->
+
+<WindowStyle>
+  <Font>Sans-10</Font>
+  <Width>3</Width>
+  <Foreground>#000</Foreground>
+  <Background>#F5F4F4:#C2BFBD</Background>
+  <Outline>#19184A</Outline>
+  <Active>
+    <Foreground>#FFF</Foreground>
+    <Background>#B2CCED:#759CCC</Background>
+    <Outline>#000</Outline>
+  </Active>
+</WindowStyle>
+
+<TrayStyle>
+  <Font>Sans-10</Font>
+  <Foreground>#000</Foreground>
+  <Background>#F3F3F2:#C6C4C1</Background>
+  <Active>
+    <Foreground>#FFFFFF</Foreground>
+    <Background>#a8c5e9:#80a7d6</Background>
+  </Active>
+</TrayStyle>
+
+<PagerStyle>
+  <Outline>#000</Outline>
+  <Foreground>#D6D6D6</Foreground>
+  <Background>#E9E9E9</Background>
+  <Active>
+    <Foreground>#a8c5e9</Foreground>
+    <Background>#80a7d6</Background>
+  </Active>
+</PagerStyle>
+
+<PopupStyle>
+  <Font>Sans-10</Font>
+  <Outline>#97b8e2</Outline>
+  <Foreground>#000</Foreground>
+  <Background>#FFF</Background>
+</PopupStyle>
+
+<MenuStyle>
+  <Font>Sans-10</Font>
+  <Foreground>#000</Foreground>
+  <Background>#F4F4F4</Background>
+  <Active>
+    <Foreground>#FFF</Foreground>
+    <Background>#a8c5e9:#80a7d6</Background>
+  </Active>
+</MenuStyle>
+
+</JWM>

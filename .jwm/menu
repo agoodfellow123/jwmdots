@@ -1,0 +1,29 @@
+<JWM>
+    <Program label="Run" icon="/home/demo/.icons/NsCDE/48x48/actions/system-run.png">rofi -theme NsCDE -show drun</Program>
+    <Program label="App Select" icon="/home/demo/.icons/NsCDE/48x48/actions/system-search.png">/usr/local/bin/app-select</Program>
+    <Program label="Terminal" icon="/home/demo/.icons/NsCDE/48x48/apps/utilities-terminal.png">desktop-defaults-run -t</Program>
+    <Program label="File Manager" icon="/home/demo/.icons/NsCDE/48x48/apps/system-file-manager.png">desktop-defaults-run -fm</Program>
+    <Program label="Web Browser" icon="/home/demo/.icons/NsCDE/48x48/apps/web-browser.png">desktop-defaults-run -b</Program>
+    <Program label="Editor" icon="/home/demo/.icons/NsCDE/48x48/apps/accessories-text-editor.png">desktop-defaults-run -te</Program>
+    <Separator/>
+    <!-- <Menu label="Personal" icon="/home/demo/.icons/NsCDE/48x48/actions/view-list-icons.png"> -->
+        <!-- <Include>$HOME/.jwm/personal</Include> -->
+    </Menu>
+    <Menu label="Applications" icon="/home/demo/.icons/NsCDE/48x48/apps/application.png">
+        <Include>$HOME/.jwm/menu-applications</Include>
+    <!-- </Menu> -->
+    <!-- <Program label="Refresh Menu" icon="/home/demo/.icons/NsCDE/48x48/actions/view-refresh.png">desktop-menu --write-out-global &amp;&amp; jwm -restart</Program> -->
+    <!-- <Separator/> -->
+    <!-- <Menu label="Desktop" icon="/home/demo/.icons/NsCDE/48x48/places/user-desktop.png"> -->
+        <!-- <Menu label="Other Desktops"> -->
+            <!-- <Include>/usr/share/desktop-session/wm-menus/jwm-wm-menu</Include> -->
+        <!-- </Menu> -->
+        <!-- <Program label="RoxPanel on/off">paneltoggle.sh</Program> -->
+        <!-- <Program label="Conky on/off">conkytoggle.sh</Program> -->
+    </Menu>
+    <Separator/>
+    <Program label="App Killer" icon="/home/demo/.icons/NsCDE/48x48/actions/window-close.png">xkill</Program>
+    <Program label="Control Centre" icon="/home/demo/.icons/NsCDE/48x48/categories/preferences-desktop.png">antixcc.sh</Program>
+    <Separator/>
+    <!-- <Include>$HOME/.jwm/themes-list</Include> -->
+</JWM>

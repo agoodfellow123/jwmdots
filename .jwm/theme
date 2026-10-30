@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<JWM>
+  <WindowStyle decorations="motif"> 
+    <Font>DejaVu Serif-10</Font> 
+    <Width>4</Width> 
+    <Corner>0</Corner>
+    <Foreground>#555</Foreground> 
+    <Background>#BFC0C5</Background>
+        <Active>
+            <Foreground>#FFFFFF</Foreground>
+            <Background>#0077CC</Background>
+            <Opacity>1.0</Opacity>
+        </Active>
+  </WindowStyle>
+
+     <TrayStyle decorations="motif">
+    <Font>DejaVu Serif-10</Font> 
+    <Foreground>#222</Foreground> 
+    <Background>#A4A4A4</Background> 
+    <Active>
+      <Foreground>#000000</Foreground> 
+      <Background>#DDD</Background>
+    </Active> 
+  </TrayStyle>
+
+  <PagerStyle> 
+    <Outline>#000000</Outline> 
+    <Foreground>#DCDAD5</Foreground> 
+    <Background>#888888</Background> 
+    <Active>
+      <Foreground>#8899AA</Foreground> 
+      <Background>#000080</Background> 
+    </Active>
+  </PagerStyle>
+
+  <PopupStyle> 
+    <Font>DejaVu Serif-10</Font> 
+    <Foreground>black</Foreground> 
+    <Background>#BEBEBE</Background> 
+  </PopupStyle>
+
+  <MenuStyle decorations="motif">
+    <Font>DejaVu Serif-10</Font> 
+    <Foreground>#222222</Foreground> 
+    <Background>#BEBEBE</Background> 
+    <Active>
+      <Foreground>#ffffff</Foreground> 
+      <Background>#000080</Background>
+    </Active>
+  </MenuStyle> 
+</JWM>

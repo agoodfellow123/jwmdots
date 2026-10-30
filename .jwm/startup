@@ -1,0 +1,12 @@
+<JWM>
+
+<!-- Applications used in conjunction with JWM -->
+<StartupCommand>
+alttab -font "xft:DejaVu Serif Condensed-10" -fg "#000000" -bg "#BFC0C5" -frame "#0077CC" -bw 1 -t 128x96 -i 127x64 -w 1 &
+<!-- alttab -mk Super_L -e -w 1 -font "xft:DejaVu Serif Condensed-10" -fg "#000000" -bg "#BFC0C5" -frame "#0077CC" -bw 1 -t 128x96 -i 127x64 & -->
+<!-- xdotool behave_screen_edge --delay 300 --quiesce 1000 top-left exec sh -c 'xdotool keydown Super_L; sleep 0.05; xdotool key Tab; sleep 0.05; xdotool keyup Super_L' & -->
+#Check localization of Zzz File Manager:
+if [ ! -f ~/.config/zzzfm/zzzfm_already_localized ]; then zzzfmlocalize ; fi
+</StartupCommand>
+</JWM>
+

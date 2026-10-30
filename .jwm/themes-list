@@ -1,0 +1,29 @@
+<JWM>
+	<Menu label="Themes" icon="preferences-desktop-theme">
+		<Program label="Adwaita-Dark" confirm="false">jwm-set-theme --restart "Adwaita-Dark"</Program>
+		<Program label="Black" confirm="false">jwm-set-theme --restart "Black"</Program>
+		<Program label="BlueDay" confirm="false">jwm-set-theme --restart "BlueDay"</Program>
+		<Program label="Cappuccino" confirm="false">jwm-set-theme --restart "Cappuccino"</Program>
+		<Program label="Clearlooks" confirm="false">jwm-set-theme --restart "Clearlooks"</Program>
+		<Program label="DarkGray" confirm="false">jwm-set-theme --restart "DarkGray"</Program>
+		<Program label="Default" confirm="false">jwm-set-theme --restart "Default"</Program>
+		<Program label="JWMKit-Dark" confirm="false">jwm-set-theme --restart "JWMKit-Dark"</Program>
+		<Program label="JWMKit-DarkGreen" confirm="false">jwm-set-theme --restart "JWMKit-DarkGreen"</Program>
+		<Program label="JWMKit-DarkGreen-V2" confirm="false">jwm-set-theme --restart "JWMKit-DarkGreen-V2"</Program>
+		<Program label="JWMKit-Silver" confirm="false">jwm-set-theme --restart "JWMKit-Silver"</Program>
+		<Program label="Material-Blue" confirm="false">jwm-set-theme --restart "Material-Blue"</Program>
+		<Program label="Material-Sweet" confirm="false">jwm-set-theme --restart "Material-Sweet"</Program>
+		<Program label="Motif" confirm="false">jwm-set-theme --restart "Motif"</Program>
+		<Program label="NuFlat-grey" confirm="false">jwm-set-theme --restart "NuFlat-grey"</Program>
+		<Program label="Numix" confirm="false">jwm-set-theme --restart "Numix"</Program>
+		<Program label="Numix-dusk" confirm="false">jwm-set-theme --restart "Numix-dusk"</Program>
+		<Program label="Numix-sun" confirm="false">jwm-set-theme --restart "Numix-sun"</Program>
+		<Program label="PrettyPink" confirm="false">jwm-set-theme --restart "PrettyPink"</Program>
+		<Program label="Red" confirm="false">jwm-set-theme --restart "Red"</Program>
+		<Program label="Stnakes" confirm="false">jwm-set-theme --restart "Stnakes"</Program>
+		<Program label="SunnyDay" confirm="false">jwm-set-theme --restart "SunnyDay"</Program>
+		<Program label="White" confirm="false">jwm-set-theme --restart "White"</Program>
+		<Separator/>
+		<Program label="Update themes list" confirm="false">update-jwm-themes.sh</Program>
+	</Menu>
+</JWM>

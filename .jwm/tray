@@ -1,0 +1,36 @@
+<JWM>
+
+<!-- Additional tray attributes: autohide, width, border, layer, layout, valign -->
+<Tray x="0" y="-1" height="40" layer="above" valign="bottom">
+
+   <!-- Additional TrayButton attributes: label, icon, popup -->
+   <TrayButton label="" icon="/home/demo/.icons/NsCDE/48x48/actions/open-menu.png" popup="Menu">root:1</TrayButton>
+   <TrayButton label="" icon="/home/demo/.icons/NsCDE/48x48/apps/utilities-terminal.png" popup="Terminal">exec: desktop-defaults-run -t</TrayButton>
+   <TrayButton label="" icon="/home/demo/.icons/NsCDE/48x48/apps/system-file-manager.png " popup="File Manager">exec: desktop-defaults-run -fm</TrayButton>
+   <TrayButton label="" icon="/home/demo/.icons/NsCDE/48x48/apps/web-browser.png" popup="Web Browser">exec: desktop-defaults-run -b</TrayButton>
+   
+   <!-- Additional TaskList attribute: maxwidth -->
+   <TaskList maxwidth="200"/>
+
+   <!-- Additional Pager attributes; width, height -->
+   <!-- <Pager/> -->
+
+   <!-- Additional Dock attribute: none -->
+   <Separator/>
+   <Dock/>
+
+   <!-- Additional Swallow attribute: height, width -->
+   <!-- <Swallow name="xload" height="28" width="30"> xload -update 2 -jumpscroll 1 -nolabel -bg black -fg green -hl black </Swallow> -->
+
+   <!-- CLOCK -->
+   <!-- Additional Clock attributes: format, height, width, zone -->
+   <Clock format="%k:%M">
+   <!--<Text>white</Text>-->
+   <Button mask="123">exec:yad --calendar --mouse --close-on-unfocus --undecorated --skip-taskbar --button=gtk-ok:1</Button></Clock>
+	
+   <!-- TRAY BUTTONS - icons to the right of the clock- Exit-->
+   <TrayButton label="" popup="Exit Session" icon="/home/demo/.icons/NsCDE/48x48/actions/application-exit.png">exec:desktop-session-exit</TrayButton>
+
+</Tray>
+
+</JWM>

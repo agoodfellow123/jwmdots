@@ -1,0 +1,19 @@
+#!/bin/sh
+# ~/.local/bin/jwm-tray-toggle
+
+SW=$(xdpyinfo | awk '/dimensions:/{split($2,a,"x");print a[1]}')
+SH=$(xdpyinfo | awk '/dimensions:/{split($2,a,"x");print a[2]}')
+
+for id in $(xwininfo -root -children | awk '/^ +0x/{print $1}'); do
+    eval "$(xwininfo -id "$id" | awk '
+        /Absolute upper-left Y:/{print "y="$4}
+        /Width:/{print "w="$2}
+        /Height:/{print "h="$2}')"
+    [ "$w" = "$SW" ] && [ "$h" -lt 100 ] && break
+done
+
+if [ "$y" -lt 0 ]; then
+    xdotool windowmove "$id" 0 $((SH - h))
+else
+    xdotool windowmove "$id" 0 $(( -h ))
+fi
