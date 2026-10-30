@@ -1,0 +1,127 @@
+theme = "saymyname"
+
+[editor]
+bufferline = "multiple"
+default-yank-register = "+"
+true-color = true
+end-of-line-diagnostics = "disable"
+popup-border = "all"
+line-number = "relative"
+color-modes = true
+
+[editor.soft-wrap]
+enable = true
+
+[keys.normal]
+g = { G = ["goto_last_line", "goto_line_end"]}
+G = ["goto_last_line", "goto_line_end"]
+"ret" = "goto_word"
+"C-left" = "move_prev_word_end"
+"C-right" = "move_next_long_word_end"
+"S-left" = "extend_char_left"
+"S-right" = "extend_char_right"
+"C-S-left" = "extend_prev_word_end"
+"C-S-right" = "extend_next_long_word_end"
+"C-up" = "move_line_up"
+"C-down" = "move_line_down"
+"S-up" = "extend_line_up"
+"S-down" = "extend_line_down"
+"C-S-up" = "extend_line_up"
+"C-S-down" = "extend_line_down"
+"backspace" = "delete_char_backward"
+"del" = "delete_selection_noyank"
+"C-x" = "delete_selection"
+"C-c" = "yank_to_clipboard"
+"C-v" = "paste_clipboard_before"
+"C-z" = "undo"
+"C-y" = "redo"
+"C-r" = "redo"
+"C-space" = "completion"
+
+
+[keys.insert]
+j = { j = "normal_mode" }
+"C-space" = "completion"
+
+"C-a" = "select_all"
+"C-f" = "search"
+
+"C-x" = "delete_selection"
+"C-c" = "yank_to_clipboard"
+"C-v" = "paste_clipboard_before"
+"C-z" = "undo"
+"C-y" = "redo"
+"C-r" = "redo"
+# "C-S-z" = "redo"
+
+"C-left" = "move_prev_word_end"
+"C-right" = "move_next_long_word_end"
+"S-left" = "extend_char_left"
+"S-right" = "extend_char_right"
+"C-S-left" = "extend_prev_word_end"
+"C-S-right" = "extend_next_long_word_end"
+
+"C-up" = "move_line_up"
+"C-down" = "move_line_down"
+"S-up" = "extend_line_up"
+"S-down" = "extend_line_down"
+"C-S-up" = "extend_line_up"
+"C-S-down" = "extend_line_down"
+
+"backspace" = "delete_char_backward"
+"del" = "delete_selection_noyank"
+# "C-backspace" = "delete_word_backward"
+# "C-del" = "delete_word_forward"
+
+[keys.normal.space]
+l = "symbol_picker"
+L = "workspace_symbol_picker"
+s = ":write"
+S = ":write-all"
+left = "goto_previous_buffer"
+right = "goto_next_buffer"
+q = ":buffer-close"
+Q = ":quit"
+"tab" = "goto_next_buffer"
+# g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+# e = [
+  # ':sh rm -f /tmp/unique-file',
+  # ':insert-output yazi "%{buffer_name}" --chooser-file=/tmp/unique-file',
+  # ':sh printf "\x1b[?1049h\x1b[?2004h" > /dev/tty',
+  # ':open %sh{cat /tmp/unique-file}',
+  # ':redraw',
+# ]
+
+[keys.select]
+g = { G = "extend_to_file_end" }
+G = "extend_to_file_end"
+"del" = "delete_selection_noyank"
+"backspace" = "delete_selection_noyank"
+"ret" = "goto_word"
+"C-left" = "move_prev_word_end"
+"C-right" = "move_next_long_word_end"
+"S-left" = "extend_char_left"
+"S-right" = "extend_char_right"
+"C-S-left" = "extend_prev_word_end"
+"C-S-right" = "extend_next_long_word_end"
+"C-up" = "move_line_up"
+"C-down" = "move_line_down"
+"S-up" = "extend_line_up"
+"S-down" = "extend_line_down"
+"C-S-up" = "extend_line_up"
+"C-S-down" = "extend_line_down"
+"C-x" = "delete_selection"
+"C-c" = "yank_to_clipboard"
+"C-v" = "paste_clipboard_before"
+"C-z" = "undo"
+"C-y" = "redo"
+"C-r" = "redo"
+# esc = ["collapse_selection", "normal_mode"]
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.statusline]
+left = []
+center = []
+right = ["diagnostics"]

@@ -1,0 +1,260 @@
+/*
+ * This file is a part of the NsCDE - Not so Common Desktop Environment
+ * Author: Hegel3DReloaded
+ * Licence: GPLv3
+ */
+
+QLineEdit, QSpinBox, QComboBox, QDateTimeEdit, QDoubleSpinBox, KCalcDisplay {
+  color: #000000;
+  background-color: #bfc0c5;
+}
+
+QSizeGrip {
+  width: 8px;
+  height: 8px;
+}
+
+QErrorMessage, QInputDialog, QProgressDialog, QMessageBox, QDialog {
+  color: #000000;
+  background-color: #bfc0c5;
+}
+
+QDialog QTabBar::tab {
+  color: #000000;
+  background-color: #bfc0c5;
+  border-top: 1px solid #e4e5e7;
+  border-left: 1px solid #e4e5e7;
+  border-bottom: 1px solid #696a6d;
+  border-right: 1px solid #696a6d;
+  min-width: 80px;
+  min-height: 24px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+QDialog QComboBox QAbstractItemView {
+  color: #000000;
+  background-color: #a2a3a8;
+  border-top: 1px solid #e4e5e7;
+  border-left: 1px solid #e4e5e7;
+  border-bottom: 1px solid #696a6d;
+  border-right: 1px solid #696a6d;
+}
+
+QDialog QComboBox::item:!selected {
+  max-height: 32px;
+  color: #000000;
+  background-color: #bfc0c5;
+  padding-left: 1px;
+}
+
+QDialog QComboBox::item:selected {
+  max-height: 32px;
+  color: #000000;
+  background-color: #a2a3a8;
+  border-top: 1px solid #696a6d;
+  border-left: 1px solid #696a6d;
+  border-bottom: 1px solid #e4e5e7;
+  border-right: 1px solid #e4e5e7;
+  padding-left: 0px;
+}
+
+QDialog QComboBox::indicator:active:checked {
+  image: url(.NsCDE/icons/NsCDE/Qt5_RadioButtonSelected.xpm);
+  padding-left: 4px;
+}
+
+QDialog QComboBox::indicator:active {
+  image: url(.NsCDE/icons/NsCDE/Qt5_RadioButtonUnselected.xpm);
+  padding-left: 4px;
+}
+
+QDialog QComboBox::indicator:active:selected {
+  padding-left: 3px;
+}
+
+QDialog QTabBar::tab:selected {
+  border-top: 1px solid #e4e5e7;
+  border-left: 1px solid #e4e5e7;
+  border-bottom: 0px solid #696a6d;
+  border-right: 1px solid #696a6d;
+  // font-weight: bold;
+}
+
+QDialog QCheckBox, QDialog QRadioButton {
+  color: #000000;
+  background-color: #bfc0c5;
+}
+
+QDialog QGroupBox {
+  font-weight: bold;
+  background-color: #bfc0c5;
+  color: #000000;
+}
+
+QDialog QCheckBox::indicator:checked {
+  image: url(.NsCDE/icons/NsCDE/Qt5_CheckBoxChecked.xpm);
+  padding: 2px;
+}
+
+QDialog QListView {
+  color: #000000;
+  background-color: #a2a3a8;
+  border-top: 1px solid #696a6d;
+  border-left: 1px solid #696a6d;
+  border-bottom: 1px solid #e4e5e7;
+  border-right: 1px solid #e4e5e7;
+}
+
+QDialog QListView::item {
+  color: #000000;
+  background-color: #a2a3a8;
+  margin: 4px;
+}
+
+QDialog QListView::item:selected {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+QDialog QTreeView {
+  background-color: #a2a3a8;
+  color: #000000;
+  border-top: 1px solid #696a6d;
+  border-left: 1px solid #696a6d;
+  border-bottom: 1px solid #e4e5e7;
+  border-right: 1px solid #e4e5e7;
+  margin-top: 2px;
+  margin-left: 4px;
+  margin-bottom: 1px;
+  margin-right: 0px;
+}
+
+QDialog QTreeView::item, QDialog QTreeView::item:active, QDialog QTreeView::item:selected {
+  background-color: #a2a3a8;
+  color: #000000;
+}
+
+QDialog QTreeView::item:selected {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+QErrorMessage QLabel, QInputDialog QLabel, QProgressDialog QLabel, QMessageBox QLabel, QDialog QLabel {
+  color: #000000;
+  background-color: #bfc0c5;
+}
+
+QErrorMessage QLabel:disabled, QInputDialog QLabel:disabled, QProgressDialog QLabel:disabled, QMessageBox QLabel:disabled, QDialog QLabel:disabled {
+  color: #808080;
+  background-color: #bfc0c5;
+}
+
+QErrorMessage QPushButton, QInputDialog QPushButton, QProgressDialog QPushButton,
+QMessageBox QPushButton, QDialog QPushButton {
+  color: #000000;
+  background-color: #bfc0c5;
+  border-top: 1px solid #e4e5e7;
+  border-left: 1px solid #e4e5e7;
+  border-bottom: 1px solid #696a6d;
+  border-right: 1px solid #696a6d;
+  min-width: 80px;
+  min-height: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  icon: none;
+}
+
+QErrorMessage QPushButton::active::pressed, QInputDialog QPushButton::active::pressed,
+QProgressDialog QPushButton::active::pressed, QMessageBox QPushButton::active::pressed,
+QDialog QPushButton::active::pressed {
+  color: #000000;
+  background-color: #a2a3a8;
+  border-top: 1px solid #696a6d;
+  border-left: 1px solid #696a6d;
+  border-bottom: 1px solid #e4e5e7;
+  border-right: 1px solid #e4e5e7;
+  min-width: 80px;
+  min-height: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+QErrorMessage QPushButton::active, QInputDialog QPushButton::active,
+QProgressDialog QPushButton::active, QMessageBox QPushButton::active,
+QDialog QPushButton::active {
+  color: #000000;
+  background-color: #bfc0c5;
+  border-top: 1px solid #e4e5e7;
+  border-left: 1px solid #e4e5e7;
+  border-bottom: 1px solid #696a6d;
+  border-right: 1px solid #696a6d;
+  min-width: 80px;
+  min-height: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+QErrorMessage QPushButton:disabled, QInputDialog QPushButton:disabled, QProgressDialog QPushButton:disabled, 
+QMessageBox QPushButton:disabled, QDialog QPushButton:disabled {
+  color: #808080;
+  background-color: #bfc0c5;
+}
+
+QTreeView {
+  background-color: #a2a3a8;
+  color: #000000;
+  border-top: 1px solid #696a6d;
+  border-left: 1px solid #696a6d;
+  border-bottom: 1px solid #e4e5e7;
+  border-right: 1px solid #e4e5e7;
+  margin-top: 2px;
+  margin-left: 4px;
+  margin-bottom: 1px;
+  margin-right: 0px;
+}
+
+QMainWindow > QAbstractScrollArea > QAbstractItemView > QListView, QGraphicsView {
+  background-color: #a2a3a8;
+  color: #000000;
+  border-top: 1px solid #696a6d;
+  border-left: 1px solid #696a6d;
+  border-bottom: 1px solid #e4e5e7;
+  border-right: 1px solid #e4e5e7;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+
+QStatusBar, QSizeGrip {
+  border-bottom: 1px solid #696a6d;
+  border-right: 1px solid #696a6d;
+  border-top: 1px solid #e4e5e7;
+  border-left: 1px solid #e4e5e7;
+}
+
+QSplitter:handle:vertical {
+  background-position: center center;
+  background-repeat: none;
+  margin: 1px 1px 1px 1px;
+  height: 2px;
+}
+
+DolphinViewContainer > DolphinView > QAbstractScrollArea {
+  background-color: #a2a3a8;
+  color: #000000;
+  border-top: 1px solid #696a6d;
+  border-left: 1px solid #696a6d;
+  border-bottom: 1px solid #e4e5e7;
+  border-right: 1px solid #e4e5e7;
+}
+

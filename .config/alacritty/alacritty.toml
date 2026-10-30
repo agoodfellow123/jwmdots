@@ -1,0 +1,90 @@
+#[[keyboard.bindings]]
+#action = "ToggleViMode"
+#key = "Space"
+#mods = "Control"
+
+[window]
+opacity = 1
+
+[[keyboard.bindings]]
+action = "ToggleViMode"
+key = "Escape"
+mode = "Vi"
+
+[[keyboard.bindings]]
+action = "ToggleNormalSelection"
+key = "V"
+mode = "Vi"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mode = "Vi"
+mods = "Shift|Control"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Shift|Control"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mode = "Vi"
+mods = "Shift|Control"
+
+[[keyboard.bindings]]
+action = "WordLeft"
+key = "Left"
+mode = "Vi"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "WordRight"
+key = "Right"
+mode = "Vi"
+mods = "Control"
+
+[colors.bright]
+black = "0x666666"
+blue = "0x0088ff"
+cyan = "0x00e5e5"
+green = "0x00d900"
+magenta = "0xe500e5"
+red = "0xe50000"
+white = "0xe5e5e5"
+yellow = "0xe5e500"
+
+[colors.normal]
+black = "0x000000"
+blue = "0x0044b2"
+cyan = "0x00a6b2"
+green = "0x00a600"
+magenta = "0xb200b2"
+red = "0x990000"
+white = "0xbfbfbf"
+yellow = "0x999900"
+
+[colors.primary]
+background = "0x000000"
+foreground = "0xb6b6b6"
+
+[font]
+size = 14.0
+
+[font.normal]
+family = "MonaspiceNe Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "MonaspiceNe Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "MonaspiceRn Nerd Font Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "MonaspiceRn Nerd Font Mono"
+style = "Bold Italic"

@@ -1,0 +1,15 @@
+
+[roxterm profile]
+font=DejaVu Sans Mono 11
+scrollback_lines=5000
+always_show_tabs=0
+height=28 
+scroll_on_keystroke=1
+colour_scheme=CDE
+term=gnome-256color
+visible_bell=0
+scrollbar_pos=0
+hide_menubar=1
+show_add_tab_btn=1
+full_screen=0
+maximise=1
