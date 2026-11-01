@@ -25,6 +25,7 @@
 .jwm
 .jwmrc
 .local/bin/jwm-tray-toggle
+.local/share/fonts
 .themes
 .tmux
 .tmux.conf
