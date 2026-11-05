@@ -35,10 +35,12 @@
 
   <Group>
     <Class>Alacritty</Class>
-    <Width>1900</Width>
-    <Height>1000</Height>
+    <Option>width:1870</Option>
+    <Option>height:1008</Option>
+    <Option>x:25</Option>
+    <Option>y:35</Option>
     <Option>noborder</Option>
-    <Centered/>
-  </Group>
+    </Group>
+
 
 </JWM>
