@@ -17,19 +17,17 @@ g = { G = ["goto_last_line", "goto_line_end"]}
 G = ["goto_last_line", "goto_line_end"]
 "ret" = "goto_word"
 "C-left" = "move_prev_word_end"
-"C-right" = "move_next_long_word_end"
+"C-right" = "move_next_word_end"
 "S-left" = "extend_char_left"
 "S-right" = "extend_char_right"
 "C-S-left" = "extend_prev_word_end"
 "C-S-right" = "extend_next_long_word_end"
-"C-up" = "move_line_up"
-"C-down" = "move_line_down"
+"C-up" = "move_visual_line_up"  
+"C-down" = "move_visual_line_down"
 "S-up" = "extend_line_up"
 "S-down" = "extend_line_down"
 "C-S-up" = "extend_line_up"
 "C-S-down" = "extend_line_down"
-"backspace" = "delete_char_backward"
-"del" = "delete_selection_noyank"
 "C-x" = "delete_selection"
 "C-c" = "yank_to_clipboard"
 "C-v" = "paste_clipboard_before"
@@ -37,7 +35,12 @@ G = ["goto_last_line", "goto_line_end"]
 "C-y" = "redo"
 "C-r" = "redo"
 "C-space" = "completion"
-"A-c" = "keep_primary_selection"
+"S-d" = "delete_selection_noyank"
+"backspace" = "delete_char_backward"
+"del" = "delete_char_forward"
+"C-backspace" = "delete_word_backward"
+"C-del" = "delete_word_forward"
+# "A-c" = "keep_primary_selection
 
 [keys.insert]
 j = { j = "normal_mode" }
@@ -54,25 +57,26 @@ j = { j = "normal_mode" }
 "C-r" = "redo"
 # "C-S-z" = "redo"
 
-"C-left" = "move_prev_word_end"
-"C-right" = "move_next_long_word_end"
+"C-left" = "move_prev_word_start"
+"C-right" = ["move_next_word_end", "extend_char_right"]
 "S-left" = "extend_char_left"
 "S-right" = "extend_char_right"
 "C-S-left" = "extend_prev_word_end"
-"C-S-right" = "extend_next_long_word_end"
+"C-S-right" = "extend_next_word_end"
 
-"C-up" = "move_line_up"
-"C-down" = "move_line_down"
+"C-up" = "move_visual_line_up"  
+"C-down" = "move_visual_line_down"
 "S-up" = "extend_line_up"
 "S-down" = "extend_line_down"
 "C-S-up" = "extend_line_up"
 "C-S-down" = "extend_line_down"
 
 "backspace" = "delete_char_backward"
-"del" = "delete_selection_noyank"
-"A-c" = "keep_primary_selection"
-# "C-backspace" = "delete_word_backward"
-# "C-del" = "delete_word_forward"
+"del" = "delete_char_forward"
+"C-backspace" = "delete_word_backward"
+"C-del" = "delete_word_forward"
+
+# "A-c" = "keep_primary_selection"
 
 [keys.normal.space]
 l = "symbol_picker"
@@ -84,6 +88,7 @@ right = "goto_next_buffer"
 q = ":buffer-close"
 Q = ":quit"
 "tab" = "goto_next_buffer"
+"space" = [ "extend_prev_word_end", "move_next_word_start" ]
 # g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
 # e = [
   # ':sh rm -f /tmp/unique-file',
@@ -95,18 +100,21 @@ Q = ":quit"
 
 [keys.select]
 g = { G = "extend_to_file_end" }
+"space" = { "space" = [ "extend_prev_word_end", "move_next_word_start" ] }
 G = "extend_to_file_end"
 "del" = "delete_selection_noyank"
 "backspace" = "delete_selection_noyank"
+"C-del" = "delete_selection_noyank"
+"C-backspace" = "delete_selection_noyank"
 "ret" = "goto_word"
-"C-left" = "move_prev_word_end"
-"C-right" = "move_next_long_word_end"
+"C-left" = "extend_prev_word_end"
+"C-right" = "extend_next_word_end"
 "S-left" = "extend_char_left"
 "S-right" = "extend_char_right"
 "C-S-left" = "extend_prev_word_end"
-"C-S-right" = "extend_next_long_word_end"
-"C-up" = "move_line_up"
-"C-down" = "move_line_down"
+"C-S-right" = "extend_next_word_end"
+"C-up" = "extend_line_up" 
+"C-down" = "extend_line_down"
 "S-up" = "extend_line_up"
 "S-down" = "extend_line_down"
 "C-S-up" = "extend_line_up"
@@ -117,7 +125,8 @@ G = "extend_to_file_end"
 "C-z" = "undo"
 "C-y" = "redo"
 "C-r" = "redo"
-"A-c" = "keep_primary_selection"
+"S-d" = "delete_selection_noyank"
+# "A-c" = "keep_primary_selection"
 # esc = ["collapse_selection", "normal_mode"]
 
 [editor.cursor-shape]

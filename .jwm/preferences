@@ -33,5 +33,12 @@
 <!-- The location of icons displayed in Window-Titlebar and Tray-TaskList items -->
 <IconPath>/home/demo/.icons/NsCDE</IconPath>
 
+  <Group>
+    <Class>Alacritty</Class>
+    <Width>1900</Width>
+    <Height>1000</Height>
+    <Option>noborder</Option>
+    <Centered/>
+  </Group>
 
 </JWM>

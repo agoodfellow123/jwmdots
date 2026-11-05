@@ -82,9 +82,9 @@ family = "MonaspiceNe Nerd Font Mono"
 style = "Bold"
 
 [font.italic]
-family = "MonaspiceRn Nerd Font Mono"
+family = "MonaspiceAr Nerd Font Mono"
 style = "Italic"
 
 [font.bold_italic]
-family = "MonaspiceRn Nerd Font Mono"
+family = "MonaspiceAr Nerd Font Mono"
 style = "Bold Italic"

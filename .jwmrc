@@ -24,9 +24,4 @@
 <Include>$HOME/.jwm/tray</Include>
 <Include>$HOME/.jwm/preferences</Include>
 
-<Group>
-    <Class>Alacritty</Class>
-    <Option>noborder</Option>
-</Group>
-
 </JWM>
